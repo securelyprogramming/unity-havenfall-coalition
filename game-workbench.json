@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "id": "havenfall-coalition",
+  "title": "Havenfall Coalition",
+  "engine": "Unity",
+  "family": "Community survival",
+  "projectPath": "Game",
+  "gameType": "3d-game",
+  "description": "Rescue residents, assign guards and scavengers, supply a refuge, and defend against infected waves. Three-chapter development prototype; controller, multiplayer, platform and Steam release acceptance are tracked separately.",
+  "links": {
+    "repository": "https://github.com/securelyprogramming/unity-havenfall-coalition",
+    "websiteRepository": null,
+    "website": null,
+    "jira": null
+  },
+  "builder": {
+    "openScript": null,
+    "guide": "unity-havenfall-coalition/tools/StageBuilder/README.md"
+  },
+  "catalog": "unity-havenfall-coalition/tools/StageBuilder/stage-catalog.json"
+}

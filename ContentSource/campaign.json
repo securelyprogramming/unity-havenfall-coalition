@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "havenfall-coalition",
+  "title": "Havenfall Coalition",
+  "mode": "havenfall-coalition",
+  "genre": "community-survival",
+  "brief": "Build a shared refuge, gather medicine and food, rescue survivors and defend the community with LAN friends.",
+  "seed": 286,
+  "difficulty": 1,
+  "repository": "https://github.com/securelyprogramming/unity-havenfall-coalition",
+  "folder": "unity-havenfall-coalition",
+  "engine": "Unity",
+  "engineVersion": "6000.6.0f1",
+  "project": "Game",
+  "targetPlatforms": [
+    "Windows",
+    "macOS",
+    "Linux"
+  ],
+  "storeTarget": "Steam premium PC",
+  "players": "1–4 LAN cooperative players; local solo campaign",
+  "accent": "#bb795e",
+  "setting": "community",
+  "enemy": "zombie",
+  "cast": [
+    {
+      "name": "Leah Ward",
+      "role": "refuge leader"
+    },
+    {
+      "name": "Malik Stone",
+      "role": "field medic"
+    },
+    {
+      "name": "June Bell",
+      "role": "builder"
+    }
+  ],
+  "chapters": [
+    {
+      "number": 1,
+      "title": "A Place to Stay",
+      "story": "Leah opens a refuge to whoever can reach it. A home begins with food, medicine and a defended door.",
+      "layoutSeed": 286
+    },
+    {
+      "number": 2,
+      "title": "Supply Lines",
+      "story": "Malik risks a supply route while June turns the refuge into something worth defending.",
+      "layoutSeed": 459
+    },
+    {
+      "number": 3,
+      "title": "The Coalition",
+      "story": "The final evacuation call is a choice: abandon the refuge or make it safe for everyone still coming.",
+      "layoutSeed": 632
+    }
+  ],
+  "status": "development; build, gameplay, physical controller, multi-machine LAN and Steam release acceptance tracked separately",
+  "inspiration": "Original characters, names, story and code; genre references are design inspiration only."
+}

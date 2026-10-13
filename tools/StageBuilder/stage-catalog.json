@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "slug": "havenfall-coalition",
+  "title": "Havenfall Coalition",
+  "engine": "Unity",
+  "projectPath": "unity-havenfall-coalition/Game",
+  "galleryRoot": "_Workspace",
+  "isConcept": false,
+  "status": "development-prototype-previews-pending",
+  "stages": [
+    {
+      "id": "frontier-chapter-1",
+      "title": "Chapter 1: A Place to Stay",
+      "kind": "development-campaign-reference",
+      "managedBy": "frontier-workbench-v1",
+      "images": {},
+      "notes": [
+        "Leah opens a refuge to whoever can reach it. A home begins with food, medicine and a defended door.",
+        "This is an authored campaign reference. A native preview is connected only after its matching report and image hashes verify."
+      ],
+      "sourceEvidence": [
+        "unity-havenfall-coalition/ContentSource/campaign.json",
+        "unity-havenfall-coalition/Game/Assets/Frontier/Core/Chapters.cs",
+        "unity-havenfall-coalition/Game/Assets/Frontier/Unity/Art/FrontierWorldView.cs"
+      ]
+    },
+    {
+      "id": "frontier-chapter-2",
+      "title": "Chapter 2: Supply Lines",
+      "kind": "development-campaign-reference",
+      "managedBy": "frontier-workbench-v1",
+      "images": {},
+      "notes": [
+        "Malik risks a supply route while June turns the refuge into something worth defending.",
+        "This is an authored campaign reference. A native preview is connected only after its matching report and image hashes verify."
+      ],
+      "sourceEvidence": [
+        "unity-havenfall-coalition/ContentSource/campaign.json",
+        "unity-havenfall-coalition/Game/Assets/Frontier/Core/Chapters.cs",
+        "unity-havenfall-coalition/Game/Assets/Frontier/Unity/Art/FrontierWorldView.cs"
+      ]
+    },
+    {
+      "id": "frontier-chapter-3",
+      "title": "Chapter 3: The Coalition",
+      "kind": "development-campaign-reference",
+      "managedBy": "frontier-workbench-v1",
+      "images": {},
+      "notes": [
+        "The final evacuation call is a choice: abandon the refuge or make it safe for everyone still coming.",
+        "This is an authored campaign reference. A native preview is connected only after its matching report and image hashes verify."
+      ],
+      "sourceEvidence": [
+        "unity-havenfall-coalition/ContentSource/campaign.json",
+        "unity-havenfall-coalition/Game/Assets/Frontier/Core/Chapters.cs",
+        "unity-havenfall-coalition/Game/Assets/Frontier/Unity/Art/FrontierWorldView.cs"
+      ]
+    }
+  ],
+  "runtimeBoundary": "Native captures are references to the standalone development prototype. Workbench workshop edits are separate planning drafts until a runtime adapter is implemented. Physical input, cross-machine LAN, Windows/Linux and Steam release acceptance are tracked separately.",
+  "updated": "2026-10-13"
+}
