@@ -1,0 +1,69 @@
+{
+  "art": {
+    "accent": "#e7ba78",
+    "kind": "original-vector",
+    "motif": "Community shelter shield",
+    "provenance": "Repository-native SVG authored for this game; no paid source artwork.",
+    "sourceSha256": "413d265ea9d92918b34e362649c6dabe7eb55c51561f2d0457027432e4eacf0a"
+  },
+  "assets": {
+    "icon-128.png": {
+      "bytes": 18603,
+      "sha256": "b3a6940e25c6104bcb9f32c0faa2c1deab33beb0b0d05699d396a6fc560d3d2b"
+    },
+    "icon-16.png": {
+      "bytes": 857,
+      "sha256": "c425b13f3e42fcc329a587eb75e528ea005c91895ceff10daef92c75e89482f1"
+    },
+    "icon-256.png": {
+      "bytes": 50745,
+      "sha256": "6618490c02f5ac438dca61375097ab8efaced246f06c4ec432e91a2046be8d02"
+    },
+    "icon-32.png": {
+      "bytes": 2371,
+      "sha256": "db2eae2190bda4fa3ac11f58eaff4a0b37973ac13b8e2c32c321092489ec847e"
+    },
+    "icon-512.png": {
+      "bytes": 133584,
+      "sha256": "a60c5c109425d4a6398f4b66b5327f5b8b068c494c220f23d0fbaf5274284216"
+    },
+    "icon-64.png": {
+      "bytes": 6849,
+      "sha256": "5faefbe7142f13bafba382f9c8f01341ba31c590ee41a2076db37cb2a498c0b9"
+    },
+    "icon.bmp": {
+      "bytes": 196662,
+      "sha256": "dfae87ce2f11a166ec0119eac3f09ea1691e8a25ed424ac0c1bd5750974f18cd"
+    },
+    "icon.icns": {
+      "bytes": 624952,
+      "sha256": "30563354e146e0dcf5b44b502450399b320a4b7fcfd17d36997b9d4e2246f50b"
+    },
+    "icon.ico": {
+      "bytes": 86475,
+      "sha256": "eb9fc71715b1f8adaa0519878eaffa16711ae33bfacebeeb1fb6ddeffad25d9f"
+    },
+    "icon.png": {
+      "bytes": 262406,
+      "sha256": "549bfed5d368d9f25d41c9443057a4655d6ccc170e3913e9bccbff0d10417520"
+    },
+    "source.png": {
+      "bytes": 247828,
+      "sha256": "413d265ea9d92918b34e362649c6dabe7eb55c51561f2d0457027432e4eacf0a"
+    },
+    "source.svg": {
+      "bytes": 1466,
+      "sha256": "32cf0f986a9932623d7a22e932c2a691a71e92ca6fed11e8de9f0ee49d77054c"
+    }
+  },
+  "gameId": "havenfall-coalition",
+  "installs": [
+    {
+      "asset": "source.png",
+      "path": "Assets/Editor/Branding/GameAppIcon.png"
+    }
+  ],
+  "pipeline": "securelyprogramming/game-workbench/scripts/game-icons.py",
+  "schemaVersion": 1,
+  "scope": "Application icons only; store capsules and platform release certification are separate."
+}

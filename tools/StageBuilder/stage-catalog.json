@@ -15,16 +15,16 @@
       "managedBy": "frontier-workbench-v1",
       "images": {
         "preview": {
-          "path": "Portfolio/Previews/frontier/havenfall-coalition/2026-10-13/gameplay-chapter1.png",
-          "bytes": 167000,
-          "sha256": "31ee79cfde8c1078451d8ddd49f07e1905b3226745b58a9b8509f390e534d0b0",
+          "path": "Portfolio/Previews/polish/2026-10-13/havenfall-coalition/gameplay-chapter1.png",
+          "bytes": 186289,
+          "sha256": "199a0944ffbc05f913130f71caae4c1623a9e4c9987e0306d4e407a5e89eb853",
           "width": 1440,
           "height": 900
         }
       },
       "notes": [
         "Leah opens a refuge to whoever can reach it. A home begins with food, medicine and a defended door.",
-        "ScreenCapture from the Unity 6000.6.0f1 native OSXPlayer; report capture kind chapter1, chapter 1, simulation tick 240.",
+        "Fresh polished Unity6000.6 macOS player, 2026-10-13. Actual ScreenCapture: chapter1, chapter 1, simulation tick 240.",
         "The matching native report records three chapters completed through production commands. This capture is a view of the listed chapter, not a playable browser build.",
         "Physical controller ergonomics, separate-machine LAN, Windows/Linux execution and Steam release acceptance remain separate checks."
       ],
@@ -41,16 +41,16 @@
       "managedBy": "frontier-workbench-v1",
       "images": {
         "preview": {
-          "path": "Portfolio/Previews/frontier/havenfall-coalition/2026-10-13/gameplay-chapter2.png",
-          "bytes": 174371,
-          "sha256": "576ac99c7e6c06a58bb01953ab4f2e64a6c348104edeb250fe972ccafcbcd077",
+          "path": "Portfolio/Previews/polish/2026-10-13/havenfall-coalition/gameplay-chapter2.png",
+          "bytes": 195623,
+          "sha256": "0d369ca0f9269a8c23eb7d6c5641980ca294b74e1497c63eee1e7729a10ae0bb",
           "width": 1440,
           "height": 900
         }
       },
       "notes": [
         "Malik risks a supply route while June turns the refuge into something worth defending.",
-        "ScreenCapture from the Unity 6000.6.0f1 native OSXPlayer; report capture kind chapter2, chapter 2, simulation tick 242.",
+        "Fresh polished Unity6000.6 macOS player, 2026-10-13. Actual ScreenCapture: chapter2, chapter 2, simulation tick 242.",
         "The matching native report records three chapters completed through production commands. This capture is a view of the listed chapter, not a playable browser build.",
         "Physical controller ergonomics, separate-machine LAN, Windows/Linux execution and Steam release acceptance remain separate checks."
       ],
@@ -67,16 +67,16 @@
       "managedBy": "frontier-workbench-v1",
       "images": {
         "preview": {
-          "path": "Portfolio/Previews/frontier/havenfall-coalition/2026-10-13/gameplay-chapter3.png",
-          "bytes": 176601,
-          "sha256": "713577ed3e5037fe35f8bb364ab6f8eba4c7b0b89249b79d54253bde09e6475e",
+          "path": "Portfolio/Previews/polish/2026-10-13/havenfall-coalition/gameplay-chapter3.png",
+          "bytes": 196234,
+          "sha256": "40329bf5df9227528ff026b38277656ffae6ed6ad92e01c5624b71effe543519",
           "width": 1440,
           "height": 900
         }
       },
       "notes": [
         "The final evacuation call is a choice: abandon the refuge or make it safe for everyone still coming.",
-        "ScreenCapture from the Unity 6000.6.0f1 native OSXPlayer; report capture kind chapter3, chapter 3, simulation tick 242.",
+        "Fresh polished Unity6000.6 macOS player, 2026-10-13. Actual ScreenCapture: chapter3, chapter 3, simulation tick 242.",
         "The matching native report records three chapters completed through production commands. This capture is a view of the listed chapter, not a playable browser build.",
         "Physical controller ergonomics, separate-machine LAN, Windows/Linux execution and Steam release acceptance remain separate checks."
       ],
@@ -93,16 +93,16 @@
       "managedBy": "frontier-workbench-v1",
       "images": {
         "preview": {
-          "path": "Portfolio/Previews/frontier/havenfall-coalition/2026-10-13/gameplay-menu.png",
-          "bytes": 135914,
-          "sha256": "7d03e3d40689ba2000ba1a4901c5fb07d100e6861d99576fb864ab996310a031",
+          "path": "Portfolio/Previews/polish/2026-10-13/havenfall-coalition/gameplay-menu.png",
+          "bytes": 133314,
+          "sha256": "3eeb8ccf9a191313b7cb7d30208b0933ce09c570dc058c1d3d950c31a687f83d",
           "width": 1440,
           "height": 900
         }
       },
       "notes": [
-        "ScreenCapture from the Unity 6000.6.0f1 native OSXPlayer; report capture kind menu, chapter 1, simulation tick 0.",
         "The matching native report records three chapters completed through production commands. This capture is a view of the listed chapter, not a playable browser build.",
+        "Fresh polished Unity6000.6 macOS player, 2026-10-13. Actual ScreenCapture: menu, chapter 1, simulation tick 0.",
         "Physical controller ergonomics, separate-machine LAN, Windows/Linux execution and Steam release acceptance remain separate checks."
       ],
       "sourceEvidence": [
@@ -116,16 +116,16 @@
       "managedBy": "frontier-workbench-v1",
       "images": {
         "preview": {
-          "path": "Portfolio/Previews/frontier/havenfall-coalition/2026-10-13/gameplay-story.png",
-          "bytes": 157327,
-          "sha256": "50a8e0ab296ee68ccd320b2f7aee6ccb5c3ee3a18ada7d7bf3a7c55a2c0e8c1f",
+          "path": "Portfolio/Previews/polish/2026-10-13/havenfall-coalition/gameplay-story.png",
+          "bytes": 157331,
+          "sha256": "1093c524ae5ca4c8ae49c3ab5f69175fd965ade05e462ed0263a701da6938d67",
           "width": 1440,
           "height": 900
         }
       },
       "notes": [
-        "ScreenCapture from the Unity 6000.6.0f1 native OSXPlayer; report capture kind story, chapter 1, simulation tick 0.",
         "The matching native report records three chapters completed through production commands. This capture is a view of the listed chapter, not a playable browser build.",
+        "Fresh polished Unity6000.6 macOS player, 2026-10-13. Actual ScreenCapture: story, chapter 1, simulation tick 0.",
         "Physical controller ergonomics, separate-machine LAN, Windows/Linux execution and Steam release acceptance remain separate checks."
       ],
       "sourceEvidence": [
@@ -139,16 +139,16 @@
       "managedBy": "frontier-workbench-v1",
       "images": {
         "preview": {
-          "path": "Portfolio/Previews/frontier/havenfall-coalition/2026-10-13/gameplay-victory1.png",
-          "bytes": 188119,
-          "sha256": "3191a4d8d2b8a4db5e3b66d6e788765051001b610f53a336e5a94d55fd20fb73",
+          "path": "Portfolio/Previews/polish/2026-10-13/havenfall-coalition/gameplay-victory1.png",
+          "bytes": 204306,
+          "sha256": "7b29bc3dcdae99fcd47cc38c37d7b21cfc86679963496652f9b15fd70e398df3",
           "width": 1440,
           "height": 900
         }
       },
       "notes": [
-        "ScreenCapture from the Unity 6000.6.0f1 native OSXPlayer; report capture kind victory1, chapter 1, simulation tick 1232.",
         "The matching native report records three chapters completed through production commands. This capture is a view of the listed chapter, not a playable browser build.",
+        "Fresh polished Unity6000.6 macOS player, 2026-10-13. Actual ScreenCapture: victory1, chapter 1, simulation tick 1232.",
         "Physical controller ergonomics, separate-machine LAN, Windows/Linux execution and Steam release acceptance remain separate checks."
       ],
       "sourceEvidence": [
@@ -162,16 +162,16 @@
       "managedBy": "frontier-workbench-v1",
       "images": {
         "preview": {
-          "path": "Portfolio/Previews/frontier/havenfall-coalition/2026-10-13/gameplay-story2.png",
-          "bytes": 169227,
-          "sha256": "50d0e0dc649119fe5403e2d7c3c22c39c21b1c17456079a95f451228341d8f68",
+          "path": "Portfolio/Previews/polish/2026-10-13/havenfall-coalition/gameplay-story2.png",
+          "bytes": 170165,
+          "sha256": "a608d39c570530b6bac8c2440680d1bc0282479c11d99fc43e3d051034f1da64",
           "width": 1440,
           "height": 900
         }
       },
       "notes": [
-        "ScreenCapture from the Unity 6000.6.0f1 native OSXPlayer; report capture kind story2, chapter 2, simulation tick 2.",
         "The matching native report records three chapters completed through production commands. This capture is a view of the listed chapter, not a playable browser build.",
+        "Fresh polished Unity6000.6 macOS player, 2026-10-13. Actual ScreenCapture: story2, chapter 2, simulation tick 2.",
         "Physical controller ergonomics, separate-machine LAN, Windows/Linux execution and Steam release acceptance remain separate checks."
       ],
       "sourceEvidence": [
@@ -185,16 +185,16 @@
       "managedBy": "frontier-workbench-v1",
       "images": {
         "preview": {
-          "path": "Portfolio/Previews/frontier/havenfall-coalition/2026-10-13/gameplay-victory2.png",
-          "bytes": 198207,
-          "sha256": "1441c423bdd7bacb5183273fbe11da4408cf54b2ea27b413763f1792660b5259",
+          "path": "Portfolio/Previews/polish/2026-10-13/havenfall-coalition/gameplay-victory2.png",
+          "bytes": 216068,
+          "sha256": "e3d4cfd252f48d6862d17269a97c8df821413d5db43637709cdb01690bd5ef19",
           "width": 1440,
           "height": 900
         }
       },
       "notes": [
-        "ScreenCapture from the Unity 6000.6.0f1 native OSXPlayer; report capture kind victory2, chapter 2, simulation tick 1562.",
         "The matching native report records three chapters completed through production commands. This capture is a view of the listed chapter, not a playable browser build.",
+        "Fresh polished Unity6000.6 macOS player, 2026-10-13. Actual ScreenCapture: victory2, chapter 2, simulation tick 1562.",
         "Physical controller ergonomics, separate-machine LAN, Windows/Linux execution and Steam release acceptance remain separate checks."
       ],
       "sourceEvidence": [
@@ -208,16 +208,16 @@
       "managedBy": "frontier-workbench-v1",
       "images": {
         "preview": {
-          "path": "Portfolio/Previews/frontier/havenfall-coalition/2026-10-13/gameplay-story3.png",
-          "bytes": 176005,
-          "sha256": "3a11a3d8e0aa8df794c0160cc0656b6b2dbe93dba08c9037f15572b05e354045",
+          "path": "Portfolio/Previews/polish/2026-10-13/havenfall-coalition/gameplay-story3.png",
+          "bytes": 175922,
+          "sha256": "ef18a142d3cde7190bf206daf649ff0379513454649676035f30ee62172cd7e7",
           "width": 1440,
           "height": 900
         }
       },
       "notes": [
-        "ScreenCapture from the Unity 6000.6.0f1 native OSXPlayer; report capture kind story3, chapter 3, simulation tick 2.",
         "The matching native report records three chapters completed through production commands. This capture is a view of the listed chapter, not a playable browser build.",
+        "Fresh polished Unity6000.6 macOS player, 2026-10-13. Actual ScreenCapture: story3, chapter 3, simulation tick 2.",
         "Physical controller ergonomics, separate-machine LAN, Windows/Linux execution and Steam release acceptance remain separate checks."
       ],
       "sourceEvidence": [
@@ -231,16 +231,16 @@
       "managedBy": "frontier-workbench-v1",
       "images": {
         "preview": {
-          "path": "Portfolio/Previews/frontier/havenfall-coalition/2026-10-13/gameplay-victory3.png",
-          "bytes": 216604,
-          "sha256": "97010e0e472565421fc6a4754f70d0456369ab600c04119e3f6ec8b6e1ca075f",
+          "path": "Portfolio/Previews/polish/2026-10-13/havenfall-coalition/gameplay-victory3.png",
+          "bytes": 233510,
+          "sha256": "d60e0ce26928cd7c13513ae56c9baa1f9215803079f9029cc77a0751b67a6a36",
           "width": 1440,
           "height": 900
         }
       },
       "notes": [
-        "ScreenCapture from the Unity 6000.6.0f1 native OSXPlayer; report capture kind victory3, chapter 3, simulation tick 2086.",
         "The matching native report records three chapters completed through production commands. This capture is a view of the listed chapter, not a playable browser build.",
+        "Fresh polished Unity6000.6 macOS player, 2026-10-13. Actual ScreenCapture: victory3, chapter 3, simulation tick 2086.",
         "Physical controller ergonomics, separate-machine LAN, Windows/Linux execution and Steam release acceptance remain separate checks."
       ],
       "sourceEvidence": [
@@ -254,16 +254,16 @@
       "managedBy": "frontier-workbench-v1",
       "images": {
         "preview": {
-          "path": "Portfolio/Previews/frontier/havenfall-coalition/2026-10-13/gameplay-finale.png",
-          "bytes": 192029,
-          "sha256": "625c9fc392fe210417fbbb56d49375a5fbf3ba831968a960e163c4eba4edbb58",
+          "path": "Portfolio/Previews/polish/2026-10-13/havenfall-coalition/gameplay-finale.png",
+          "bytes": 191685,
+          "sha256": "28eee844170d788a031103cee399542897f951e500eb43be918a3d6df0600c06",
           "width": 1440,
           "height": 900
         }
       },
       "notes": [
-        "ScreenCapture from the Unity 6000.6.0f1 native OSXPlayer; report capture kind finale, chapter 3, simulation tick 2086.",
         "The matching native report records three chapters completed through production commands. This capture is a view of the listed chapter, not a playable browser build.",
+        "Fresh polished Unity6000.6 macOS player, 2026-10-13. Actual ScreenCapture: finale, chapter 3, simulation tick 2086.",
         "Physical controller ergonomics, separate-machine LAN, Windows/Linux execution and Steam release acceptance remain separate checks."
       ],
       "sourceEvidence": [

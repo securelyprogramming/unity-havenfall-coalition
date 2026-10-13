@@ -1,0 +1,2237 @@
+{
+  "schemaVersion": 1,
+  "gameId": "havenfall-coalition",
+  "status": "passed",
+  "runKind": "Fresh isolated standalone regression",
+  "runtimeSourceFileCount": 20,
+  "runtimeSourceSha256": {
+    "Game/Assets/Frontier/Core/Actions.cs": "369b4d899583a83ded41906b469a5df6d5c7139c7fbd939c33a875c8362f5731",
+    "Game/Assets/Frontier/Core/Chapters.cs": "a5fc5d151096353f58546fd2fe709f23dcf656ef147c30159f8d2a7d0beacec5",
+    "Game/Assets/Frontier/Core/Models.cs": "c23507a1d77ccf236964f62f23c3a31986c8df5016cbf52a225df463662391bc",
+    "Game/Assets/Frontier/Core/PlaytestDriver.cs": "95f326e3530e6d52682c934d5598ed35f0129270d5bbb61e53a0ac15a0b79dce",
+    "Game/Assets/Frontier/Core/Simulation.cs": "3b2a74b963e6833906351e75f926fd9c2842de200b41ec4f7d3f6f68c80a4228",
+    "Game/Assets/Frontier/Core/Ticking.cs": "cbb4d1a04b0fb141a06cd4ccf7e75e23bb5caccb3c48a8dcfb256f31242dd8b6",
+    "Game/Assets/Frontier/Networking/JsonPayload.cs": "c51ba0412259a40e4719465244e4921413bc5f702330aa1e34e0441119bce795",
+    "Game/Assets/Frontier/Networking/LanDiscovery.cs": "e0ee19b0b5998e6b0578159cfa5e4a9bf8e087609047b829ba0b495f2a946b43",
+    "Game/Assets/Frontier/Networking/LanSession.cs": "745fe9768da93bc16fdcf16bc7414cf0c92461b219d16d5a54f0c9da5e24e4dc",
+    "Game/Assets/Frontier/Unity/Art/FrontierCharacters.cs": "30510287a8b0fc5ec0fe59211198571d28b9312ab6d07dfe00852ae50e15664f",
+    "Game/Assets/Frontier/Unity/Art/FrontierMeshKit.cs": "f364417004d251c0be2b64e214a915278bd990b26d353daa0e505514cdbfe00f",
+    "Game/Assets/Frontier/Unity/Art/FrontierProps.cs": "597008fbd01611cf558047a77adc2a3b86a6e5be79c2ac24ad7a5a08b549903f",
+    "Game/Assets/Frontier/Unity/Art/FrontierStages.cs": "842673a83ef2a6c54e08e737d6e146836b1b2a711e427fb050538a82f660a6db",
+    "Game/Assets/Frontier/Unity/Art/FrontierWorldView.cs": "c8187282093938bd1643f9dc8c82ae519b59bcaa78bb578e1d41f2f1391e1ff8",
+    "Game/Assets/Frontier/Unity/FrontierAudio.cs": "2f6171a549dc654a41368b4af1ea488ebc789513298e765482c59db3558a896f",
+    "Game/Assets/Frontier/Unity/FrontierGame.cs": "5f252d9aaffd143f97e4b3c5e1be09f147376b9e140f3e8649525157c745d728",
+    "Game/Assets/Frontier/Unity/FrontierHud.cs": "f68124606a053f41da192787b24672e0c5cb5ded976b4efb99f7d4dd63930c36",
+    "Game/Assets/Frontier/Unity/FrontierProfile.cs": "0bf831d8458345d5fa1b7df86667d23b3ab8479299c9efb6e89884895a07c5e3",
+    "Game/Assets/Frontier/Unity/FrontierUI.cs": "0d5c857431d23d8d7d68d47f57bf7e394c8ee6b907d8af2eafd2ff796d4b9e15",
+    "Game/Assets/Frontier/Unity/QA/FrontierNativeProbe.cs": "043a9cb161c07ae0639e6f3c288b955d77c216c5dbe1bfd3bbf47ed553043e19"
+  },
+  "physicalControllerTested": false,
+  "physicalLanTested": false,
+  "windowsLinuxExecutionTested": false,
+  "steamCertification": false,
+  "publishedPreviewsChanged": true,
+  "phases": [
+    {
+      "mode": "campaign",
+      "status": "passed",
+      "platform": "OSXPlayer",
+      "unityVersion": "6000.6.0f1",
+      "checks": [
+        {
+          "name": "diagnostic executes in a standalone Unity player",
+          "passed": true
+        },
+        {
+          "name": "native diagnostic isolation",
+          "passed": true
+        },
+        {
+          "name": "real Unity camera and authored presentation",
+          "passed": true
+        },
+        {
+          "name": "title menu has production campaign, settings, controls and LAN actions",
+          "passed": true
+        },
+        {
+          "name": "native screenshot was written: menu",
+          "passed": true
+        },
+        {
+          "name": "native screenshot is a complete PNG: menu",
+          "passed": true
+        },
+        {
+          "name": "native screenshot has rendered dimensions: menu",
+          "passed": true
+        },
+        {
+          "name": "production UI button available: Settings",
+          "passed": true
+        },
+        {
+          "name": "settings screen is reachable through its real menu button",
+          "passed": true
+        },
+        {
+          "name": "production UI button available: Master volume:",
+          "passed": true
+        },
+        {
+          "name": "volume control applies and persists",
+          "passed": true
+        },
+        {
+          "name": "production UI button available: Quality:",
+          "passed": true
+        },
+        {
+          "name": "quality control persists",
+          "passed": true
+        },
+        {
+          "name": "input binding override is saved",
+          "passed": true
+        },
+        {
+          "name": "isolated save has a valid backup",
+          "passed": true
+        },
+        {
+          "name": "corrupted isolated save recovers its last valid backup",
+          "passed": true
+        },
+        {
+          "name": "loading preserves damaged primary for diagnosis",
+          "passed": true
+        },
+        {
+          "name": "valid local save repairs primary without deleting backup",
+          "passed": true
+        },
+        {
+          "name": "settings survive repaired primary load",
+          "passed": true
+        },
+        {
+          "name": "separate corrupt-pair fixture creates a valid primary",
+          "passed": true
+        },
+        {
+          "name": "separate corrupt-pair fixture creates a valid backup",
+          "passed": true
+        },
+        {
+          "name": "two damaged isolated saves fall back to chapter one",
+          "passed": true
+        },
+        {
+          "name": "fallback preserves both damaged isolated files",
+          "passed": true
+        },
+        {
+          "name": "fresh primary can recover while retaining damaged backup",
+          "passed": true
+        },
+        {
+          "name": "corrupt-pair fixture leaves actual QA campaign intact",
+          "passed": true
+        },
+        {
+          "name": "production UI button available: Controls",
+          "passed": true
+        },
+        {
+          "name": "controls screen is reachable",
+          "passed": true
+        },
+        {
+          "name": "controls screen reflects the saved keyboard override",
+          "passed": true
+        },
+        {
+          "name": "production UI button available: Credits",
+          "passed": true
+        },
+        {
+          "name": "credits screen is reachable",
+          "passed": true
+        },
+        {
+          "name": "production UI button available: Begin campaign",
+          "passed": true
+        },
+        {
+          "name": "campaign menu enters authored story",
+          "passed": true
+        },
+        {
+          "name": "native screenshot was written: story",
+          "passed": true
+        },
+        {
+          "name": "native screenshot is a complete PNG: story",
+          "passed": true
+        },
+        {
+          "name": "native screenshot has rendered dimensions: story",
+          "passed": true
+        },
+        {
+          "name": "production UI button available: Enter chapter",
+          "passed": true
+        },
+        {
+          "name": "story button starts gameplay",
+          "passed": true
+        },
+        {
+          "name": "virtual gamepad device is registered",
+          "passed": true
+        },
+        {
+          "name": "uGUI input module and a selected menu button are active",
+          "passed": true
+        },
+        {
+          "name": "virtual D-pad navigates actual uGUI selectable buttons",
+          "passed": true
+        },
+        {
+          "name": "controller submit target is a real settings button",
+          "passed": true
+        },
+        {
+          "name": "virtual south submits through actual InputSystem uGUI module",
+          "passed": true
+        },
+        {
+          "name": "virtual east resolves Cancel binding",
+          "passed": true
+        },
+        {
+          "name": "east returns settings to its real pause-menu parent",
+          "passed": true
+        },
+        {
+          "name": "east resumes from the actual pause menu",
+          "passed": true
+        },
+        {
+          "name": "east during play does not abandon the campaign",
+          "passed": true
+        },
+        {
+          "name": "virtual left stick moves through actual gameplay input",
+          "passed": true
+        },
+        {
+          "name": "virtual right stick resolves the aim action",
+          "passed": true
+        },
+        {
+          "name": "releasing movement sends zero intent",
+          "passed": true
+        },
+        {
+          "name": "virtual A resolves Interact",
+          "passed": true
+        },
+        {
+          "name": "virtual X resolves Attack",
+          "passed": true
+        },
+        {
+          "name": "virtual LeftShoulder resolves Build",
+          "passed": true
+        },
+        {
+          "name": "virtual RightShoulder resolves Craft",
+          "passed": true
+        },
+        {
+          "name": "right trigger resolves attack action",
+          "passed": true
+        },
+        {
+          "name": "virtual Start resolves pause action",
+          "passed": true
+        },
+        {
+          "name": "Start opens the real solo pause panel",
+          "passed": true
+        },
+        {
+          "name": "solo pause stops actual simulation time",
+          "passed": true
+        },
+        {
+          "name": "Start resumes through production dispatch",
+          "passed": true
+        },
+        {
+          "name": "Select opens authored journal through production dispatch",
+          "passed": true
+        },
+        {
+          "name": "Select returns from journal to play",
+          "passed": true
+        },
+        {
+          "name": "native HUD exposes genre-specific live progress: chapter1",
+          "passed": true
+        },
+        {
+          "name": "native HUD progress reflects authoritative counters: chapter1",
+          "passed": true
+        },
+        {
+          "name": "native progress stays visible alongside interaction context: chapter1",
+          "passed": true
+        },
+        {
+          "name": "native chapter timer stays visible: chapter1",
+          "passed": true
+        },
+        {
+          "name": "native HUD uses the current saved interaction binding: chapter1",
+          "passed": true
+        },
+        {
+          "name": "native HUD label is visible: Title / chapter1",
+          "passed": true
+        },
+        {
+          "name": "native HUD label fits its viewport: Title / chapter1",
+          "passed": true
+        },
+        {
+          "name": "native HUD label is visible: Objective / chapter1",
+          "passed": true
+        },
+        {
+          "name": "native HUD label fits its viewport: Objective / chapter1",
+          "passed": true
+        },
+        {
+          "name": "native HUD label is visible: Progress / chapter1",
+          "passed": true
+        },
+        {
+          "name": "native HUD label fits its viewport: Progress / chapter1",
+          "passed": true
+        },
+        {
+          "name": "native HUD label is visible: ChapterClock / chapter1",
+          "passed": true
+        },
+        {
+          "name": "native HUD label fits its viewport: ChapterClock / chapter1",
+          "passed": true
+        },
+        {
+          "name": "native HUD label is visible: Vitals / chapter1",
+          "passed": true
+        },
+        {
+          "name": "native HUD label fits its viewport: Vitals / chapter1",
+          "passed": true
+        },
+        {
+          "name": "native HUD label is visible: Resources / chapter1",
+          "passed": true
+        },
+        {
+          "name": "native HUD label fits its viewport: Resources / chapter1",
+          "passed": true
+        },
+        {
+          "name": "native HUD label is visible: Context / chapter1",
+          "passed": true
+        },
+        {
+          "name": "native HUD label fits its viewport: Context / chapter1",
+          "passed": true
+        },
+        {
+          "name": "native HUD label is visible: Situation / chapter1",
+          "passed": true
+        },
+        {
+          "name": "native HUD label fits its viewport: Situation / chapter1",
+          "passed": true
+        },
+        {
+          "name": "native HUD label is visible: Bindings / chapter1",
+          "passed": true
+        },
+        {
+          "name": "native HUD label fits its viewport: Bindings / chapter1",
+          "passed": true
+        },
+        {
+          "name": "native screenshot was written: chapter1",
+          "passed": true
+        },
+        {
+          "name": "native screenshot is a complete PNG: chapter1",
+          "passed": true
+        },
+        {
+          "name": "native screenshot has rendered dimensions: chapter1",
+          "passed": true
+        },
+        {
+          "name": "native HUD exposes genre-specific live progress: gameplay",
+          "passed": true
+        },
+        {
+          "name": "native HUD progress reflects authoritative counters: gameplay",
+          "passed": true
+        },
+        {
+          "name": "native progress stays visible alongside interaction context: gameplay",
+          "passed": true
+        },
+        {
+          "name": "native chapter timer stays visible: gameplay",
+          "passed": true
+        },
+        {
+          "name": "native HUD uses the current saved interaction binding: gameplay",
+          "passed": true
+        },
+        {
+          "name": "native HUD label is visible: Title / gameplay",
+          "passed": true
+        },
+        {
+          "name": "native HUD label fits its viewport: Title / gameplay",
+          "passed": true
+        },
+        {
+          "name": "native HUD label is visible: Objective / gameplay",
+          "passed": true
+        },
+        {
+          "name": "native HUD label fits its viewport: Objective / gameplay",
+          "passed": true
+        },
+        {
+          "name": "native HUD label is visible: Progress / gameplay",
+          "passed": true
+        },
+        {
+          "name": "native HUD label fits its viewport: Progress / gameplay",
+          "passed": true
+        },
+        {
+          "name": "native HUD label is visible: ChapterClock / gameplay",
+          "passed": true
+        },
+        {
+          "name": "native HUD label fits its viewport: ChapterClock / gameplay",
+          "passed": true
+        },
+        {
+          "name": "native HUD label is visible: Vitals / gameplay",
+          "passed": true
+        },
+        {
+          "name": "native HUD label fits its viewport: Vitals / gameplay",
+          "passed": true
+        },
+        {
+          "name": "native HUD label is visible: Resources / gameplay",
+          "passed": true
+        },
+        {
+          "name": "native HUD label fits its viewport: Resources / gameplay",
+          "passed": true
+        },
+        {
+          "name": "native HUD label is visible: Context / gameplay",
+          "passed": true
+        },
+        {
+          "name": "native HUD label fits its viewport: Context / gameplay",
+          "passed": true
+        },
+        {
+          "name": "native HUD label is visible: Situation / gameplay",
+          "passed": true
+        },
+        {
+          "name": "native HUD label fits its viewport: Situation / gameplay",
+          "passed": true
+        },
+        {
+          "name": "native HUD label is visible: Bindings / gameplay",
+          "passed": true
+        },
+        {
+          "name": "native HUD label fits its viewport: Bindings / gameplay",
+          "passed": true
+        },
+        {
+          "name": "native screenshot was written: gameplay",
+          "passed": true
+        },
+        {
+          "name": "native screenshot is a complete PNG: gameplay",
+          "passed": true
+        },
+        {
+          "name": "native screenshot has rendered dimensions: gameplay",
+          "passed": true
+        },
+        {
+          "name": "production commands complete chapter 1",
+          "passed": true
+        },
+        {
+          "name": "native HUD exposes genre-specific live progress: victory1",
+          "passed": true
+        },
+        {
+          "name": "native HUD progress reflects authoritative counters: victory1",
+          "passed": true
+        },
+        {
+          "name": "native progress stays visible alongside interaction context: victory1",
+          "passed": true
+        },
+        {
+          "name": "native chapter timer stays visible: victory1",
+          "passed": true
+        },
+        {
+          "name": "native HUD uses the current saved interaction binding: victory1",
+          "passed": true
+        },
+        {
+          "name": "native HUD label is visible: Title / victory1",
+          "passed": true
+        },
+        {
+          "name": "native HUD label fits its viewport: Title / victory1",
+          "passed": true
+        },
+        {
+          "name": "native HUD label is visible: Objective / victory1",
+          "passed": true
+        },
+        {
+          "name": "native HUD label fits its viewport: Objective / victory1",
+          "passed": true
+        },
+        {
+          "name": "native HUD label is visible: Progress / victory1",
+          "passed": true
+        },
+        {
+          "name": "native HUD label fits its viewport: Progress / victory1",
+          "passed": true
+        },
+        {
+          "name": "native HUD label is visible: ChapterClock / victory1",
+          "passed": true
+        },
+        {
+          "name": "native HUD label fits its viewport: ChapterClock / victory1",
+          "passed": true
+        },
+        {
+          "name": "native HUD label is visible: Vitals / victory1",
+          "passed": true
+        },
+        {
+          "name": "native HUD label fits its viewport: Vitals / victory1",
+          "passed": true
+        },
+        {
+          "name": "native HUD label is visible: Resources / victory1",
+          "passed": true
+        },
+        {
+          "name": "native HUD label fits its viewport: Resources / victory1",
+          "passed": true
+        },
+        {
+          "name": "native HUD label is visible: Context / victory1",
+          "passed": true
+        },
+        {
+          "name": "native HUD label fits its viewport: Context / victory1",
+          "passed": true
+        },
+        {
+          "name": "native HUD label is visible: Situation / victory1",
+          "passed": true
+        },
+        {
+          "name": "native HUD label fits its viewport: Situation / victory1",
+          "passed": true
+        },
+        {
+          "name": "native HUD label is visible: Bindings / victory1",
+          "passed": true
+        },
+        {
+          "name": "native HUD label fits its viewport: Bindings / victory1",
+          "passed": true
+        },
+        {
+          "name": "native screenshot was written: victory1",
+          "passed": true
+        },
+        {
+          "name": "native screenshot is a complete PNG: victory1",
+          "passed": true
+        },
+        {
+          "name": "native screenshot has rendered dimensions: victory1",
+          "passed": true
+        },
+        {
+          "name": "native screenshot was written: story2",
+          "passed": true
+        },
+        {
+          "name": "native screenshot is a complete PNG: story2",
+          "passed": true
+        },
+        {
+          "name": "native screenshot has rendered dimensions: story2",
+          "passed": true
+        },
+        {
+          "name": "native HUD exposes genre-specific live progress: chapter2",
+          "passed": true
+        },
+        {
+          "name": "native HUD progress reflects authoritative counters: chapter2",
+          "passed": true
+        },
+        {
+          "name": "native progress stays visible alongside interaction context: chapter2",
+          "passed": true
+        },
+        {
+          "name": "native chapter timer stays visible: chapter2",
+          "passed": true
+        },
+        {
+          "name": "native HUD uses the current saved interaction binding: chapter2",
+          "passed": true
+        },
+        {
+          "name": "native HUD label is visible: Title / chapter2",
+          "passed": true
+        },
+        {
+          "name": "native HUD label fits its viewport: Title / chapter2",
+          "passed": true
+        },
+        {
+          "name": "native HUD label is visible: Objective / chapter2",
+          "passed": true
+        },
+        {
+          "name": "native HUD label fits its viewport: Objective / chapter2",
+          "passed": true
+        },
+        {
+          "name": "native HUD label is visible: Progress / chapter2",
+          "passed": true
+        },
+        {
+          "name": "native HUD label fits its viewport: Progress / chapter2",
+          "passed": true
+        },
+        {
+          "name": "native HUD label is visible: ChapterClock / chapter2",
+          "passed": true
+        },
+        {
+          "name": "native HUD label fits its viewport: ChapterClock / chapter2",
+          "passed": true
+        },
+        {
+          "name": "native HUD label is visible: Vitals / chapter2",
+          "passed": true
+        },
+        {
+          "name": "native HUD label fits its viewport: Vitals / chapter2",
+          "passed": true
+        },
+        {
+          "name": "native HUD label is visible: Resources / chapter2",
+          "passed": true
+        },
+        {
+          "name": "native HUD label fits its viewport: Resources / chapter2",
+          "passed": true
+        },
+        {
+          "name": "native HUD label is visible: Context / chapter2",
+          "passed": true
+        },
+        {
+          "name": "native HUD label fits its viewport: Context / chapter2",
+          "passed": true
+        },
+        {
+          "name": "native HUD label is visible: Situation / chapter2",
+          "passed": true
+        },
+        {
+          "name": "native HUD label fits its viewport: Situation / chapter2",
+          "passed": true
+        },
+        {
+          "name": "native HUD label is visible: Bindings / chapter2",
+          "passed": true
+        },
+        {
+          "name": "native HUD label fits its viewport: Bindings / chapter2",
+          "passed": true
+        },
+        {
+          "name": "native screenshot was written: chapter2",
+          "passed": true
+        },
+        {
+          "name": "native screenshot is a complete PNG: chapter2",
+          "passed": true
+        },
+        {
+          "name": "native screenshot has rendered dimensions: chapter2",
+          "passed": true
+        },
+        {
+          "name": "production commands complete chapter 2",
+          "passed": true
+        },
+        {
+          "name": "native HUD exposes genre-specific live progress: victory2",
+          "passed": true
+        },
+        {
+          "name": "native HUD progress reflects authoritative counters: victory2",
+          "passed": true
+        },
+        {
+          "name": "native progress stays visible alongside interaction context: victory2",
+          "passed": true
+        },
+        {
+          "name": "native chapter timer stays visible: victory2",
+          "passed": true
+        },
+        {
+          "name": "native HUD uses the current saved interaction binding: victory2",
+          "passed": true
+        },
+        {
+          "name": "native HUD label is visible: Title / victory2",
+          "passed": true
+        },
+        {
+          "name": "native HUD label fits its viewport: Title / victory2",
+          "passed": true
+        },
+        {
+          "name": "native HUD label is visible: Objective / victory2",
+          "passed": true
+        },
+        {
+          "name": "native HUD label fits its viewport: Objective / victory2",
+          "passed": true
+        },
+        {
+          "name": "native HUD label is visible: Progress / victory2",
+          "passed": true
+        },
+        {
+          "name": "native HUD label fits its viewport: Progress / victory2",
+          "passed": true
+        },
+        {
+          "name": "native HUD label is visible: ChapterClock / victory2",
+          "passed": true
+        },
+        {
+          "name": "native HUD label fits its viewport: ChapterClock / victory2",
+          "passed": true
+        },
+        {
+          "name": "native HUD label is visible: Vitals / victory2",
+          "passed": true
+        },
+        {
+          "name": "native HUD label fits its viewport: Vitals / victory2",
+          "passed": true
+        },
+        {
+          "name": "native HUD label is visible: Resources / victory2",
+          "passed": true
+        },
+        {
+          "name": "native HUD label fits its viewport: Resources / victory2",
+          "passed": true
+        },
+        {
+          "name": "native HUD label is visible: Context / victory2",
+          "passed": true
+        },
+        {
+          "name": "native HUD label fits its viewport: Context / victory2",
+          "passed": true
+        },
+        {
+          "name": "native HUD label is visible: Situation / victory2",
+          "passed": true
+        },
+        {
+          "name": "native HUD label fits its viewport: Situation / victory2",
+          "passed": true
+        },
+        {
+          "name": "native HUD label is visible: Bindings / victory2",
+          "passed": true
+        },
+        {
+          "name": "native HUD label fits its viewport: Bindings / victory2",
+          "passed": true
+        },
+        {
+          "name": "native screenshot was written: victory2",
+          "passed": true
+        },
+        {
+          "name": "native screenshot is a complete PNG: victory2",
+          "passed": true
+        },
+        {
+          "name": "native screenshot has rendered dimensions: victory2",
+          "passed": true
+        },
+        {
+          "name": "native screenshot was written: story3",
+          "passed": true
+        },
+        {
+          "name": "native screenshot is a complete PNG: story3",
+          "passed": true
+        },
+        {
+          "name": "native screenshot has rendered dimensions: story3",
+          "passed": true
+        },
+        {
+          "name": "native HUD exposes genre-specific live progress: chapter3",
+          "passed": true
+        },
+        {
+          "name": "native HUD progress reflects authoritative counters: chapter3",
+          "passed": true
+        },
+        {
+          "name": "native progress stays visible alongside interaction context: chapter3",
+          "passed": true
+        },
+        {
+          "name": "native chapter timer stays visible: chapter3",
+          "passed": true
+        },
+        {
+          "name": "native HUD uses the current saved interaction binding: chapter3",
+          "passed": true
+        },
+        {
+          "name": "native HUD label is visible: Title / chapter3",
+          "passed": true
+        },
+        {
+          "name": "native HUD label fits its viewport: Title / chapter3",
+          "passed": true
+        },
+        {
+          "name": "native HUD label is visible: Objective / chapter3",
+          "passed": true
+        },
+        {
+          "name": "native HUD label fits its viewport: Objective / chapter3",
+          "passed": true
+        },
+        {
+          "name": "native HUD label is visible: Progress / chapter3",
+          "passed": true
+        },
+        {
+          "name": "native HUD label fits its viewport: Progress / chapter3",
+          "passed": true
+        },
+        {
+          "name": "native HUD label is visible: ChapterClock / chapter3",
+          "passed": true
+        },
+        {
+          "name": "native HUD label fits its viewport: ChapterClock / chapter3",
+          "passed": true
+        },
+        {
+          "name": "native HUD label is visible: Vitals / chapter3",
+          "passed": true
+        },
+        {
+          "name": "native HUD label fits its viewport: Vitals / chapter3",
+          "passed": true
+        },
+        {
+          "name": "native HUD label is visible: Resources / chapter3",
+          "passed": true
+        },
+        {
+          "name": "native HUD label fits its viewport: Resources / chapter3",
+          "passed": true
+        },
+        {
+          "name": "native HUD label is visible: Context / chapter3",
+          "passed": true
+        },
+        {
+          "name": "native HUD label fits its viewport: Context / chapter3",
+          "passed": true
+        },
+        {
+          "name": "native HUD label is visible: Situation / chapter3",
+          "passed": true
+        },
+        {
+          "name": "native HUD label fits its viewport: Situation / chapter3",
+          "passed": true
+        },
+        {
+          "name": "native HUD label is visible: Bindings / chapter3",
+          "passed": true
+        },
+        {
+          "name": "native HUD label fits its viewport: Bindings / chapter3",
+          "passed": true
+        },
+        {
+          "name": "native screenshot was written: chapter3",
+          "passed": true
+        },
+        {
+          "name": "native screenshot is a complete PNG: chapter3",
+          "passed": true
+        },
+        {
+          "name": "native screenshot has rendered dimensions: chapter3",
+          "passed": true
+        },
+        {
+          "name": "production commands complete chapter 3",
+          "passed": true
+        },
+        {
+          "name": "native HUD exposes genre-specific live progress: victory3",
+          "passed": true
+        },
+        {
+          "name": "native HUD progress reflects authoritative counters: victory3",
+          "passed": true
+        },
+        {
+          "name": "native progress stays visible alongside interaction context: victory3",
+          "passed": true
+        },
+        {
+          "name": "native chapter timer stays visible: victory3",
+          "passed": true
+        },
+        {
+          "name": "native HUD uses the current saved interaction binding: victory3",
+          "passed": true
+        },
+        {
+          "name": "native HUD label is visible: Title / victory3",
+          "passed": true
+        },
+        {
+          "name": "native HUD label fits its viewport: Title / victory3",
+          "passed": true
+        },
+        {
+          "name": "native HUD label is visible: Objective / victory3",
+          "passed": true
+        },
+        {
+          "name": "native HUD label fits its viewport: Objective / victory3",
+          "passed": true
+        },
+        {
+          "name": "native HUD label is visible: Progress / victory3",
+          "passed": true
+        },
+        {
+          "name": "native HUD label fits its viewport: Progress / victory3",
+          "passed": true
+        },
+        {
+          "name": "native HUD label is visible: ChapterClock / victory3",
+          "passed": true
+        },
+        {
+          "name": "native HUD label fits its viewport: ChapterClock / victory3",
+          "passed": true
+        },
+        {
+          "name": "native HUD label is visible: Vitals / victory3",
+          "passed": true
+        },
+        {
+          "name": "native HUD label fits its viewport: Vitals / victory3",
+          "passed": true
+        },
+        {
+          "name": "native HUD label is visible: Resources / victory3",
+          "passed": true
+        },
+        {
+          "name": "native HUD label fits its viewport: Resources / victory3",
+          "passed": true
+        },
+        {
+          "name": "native HUD label is visible: Context / victory3",
+          "passed": true
+        },
+        {
+          "name": "native HUD label fits its viewport: Context / victory3",
+          "passed": true
+        },
+        {
+          "name": "native HUD label is visible: Situation / victory3",
+          "passed": true
+        },
+        {
+          "name": "native HUD label fits its viewport: Situation / victory3",
+          "passed": true
+        },
+        {
+          "name": "native HUD label is visible: Bindings / victory3",
+          "passed": true
+        },
+        {
+          "name": "native HUD label fits its viewport: Bindings / victory3",
+          "passed": true
+        },
+        {
+          "name": "native screenshot was written: victory3",
+          "passed": true
+        },
+        {
+          "name": "native screenshot is a complete PNG: victory3",
+          "passed": true
+        },
+        {
+          "name": "native screenshot has rendered dimensions: victory3",
+          "passed": true
+        },
+        {
+          "name": "non-mutating production driver has no failure",
+          "passed": true
+        },
+        {
+          "name": "three complete chapters accepted in the native player",
+          "passed": true
+        },
+        {
+          "name": "presentation observed and unlocked all actual chapter wins",
+          "passed": true
+        },
+        {
+          "name": "completed campaign unlocks save atomically",
+          "passed": true
+        },
+        {
+          "name": "same-process progression round-trip",
+          "passed": true
+        },
+        {
+          "name": "native screenshot was written: finale",
+          "passed": true
+        },
+        {
+          "name": "native screenshot is a complete PNG: finale",
+          "passed": true
+        },
+        {
+          "name": "native screenshot has rendered dimensions: finale",
+          "passed": true
+        },
+        {
+          "name": "rendered world has player and gameplay entities",
+          "passed": true
+        }
+      ],
+      "checkCount": 260,
+      "completedChapters": 3,
+      "commandsReported": 4170,
+      "runtimeErrorCount": 0,
+      "warningCount": 0,
+      "captures": [
+        {
+          "kind": "menu",
+          "file": "gameplay-menu.png",
+          "sha256": "3eeb8ccf9a191313b7cb7d30208b0933ce09c570dc058c1d3d950c31a687f83d",
+          "width": 1440,
+          "height": 900,
+          "chapter": 1,
+          "tick": 0
+        },
+        {
+          "kind": "story",
+          "file": "gameplay-story.png",
+          "sha256": "1093c524ae5ca4c8ae49c3ab5f69175fd965ade05e462ed0263a701da6938d67",
+          "width": 1440,
+          "height": 900,
+          "chapter": 1,
+          "tick": 0
+        },
+        {
+          "kind": "chapter1",
+          "file": "gameplay-chapter1.png",
+          "sha256": "199a0944ffbc05f913130f71caae4c1623a9e4c9987e0306d4e407a5e89eb853",
+          "width": 1440,
+          "height": 900,
+          "chapter": 1,
+          "tick": 240
+        },
+        {
+          "kind": "gameplay",
+          "file": "gameplay.png",
+          "sha256": "7f3a6b820df53e9816293356c487b638118798d2e39ae8ce93891ae63bf8f3e4",
+          "width": 1440,
+          "height": 900,
+          "chapter": 1,
+          "tick": 240
+        },
+        {
+          "kind": "victory1",
+          "file": "gameplay-victory1.png",
+          "sha256": "7b29bc3dcdae99fcd47cc38c37d7b21cfc86679963496652f9b15fd70e398df3",
+          "width": 1440,
+          "height": 900,
+          "chapter": 1,
+          "tick": 1232
+        },
+        {
+          "kind": "story2",
+          "file": "gameplay-story2.png",
+          "sha256": "a608d39c570530b6bac8c2440680d1bc0282479c11d99fc43e3d051034f1da64",
+          "width": 1440,
+          "height": 900,
+          "chapter": 2,
+          "tick": 2
+        },
+        {
+          "kind": "chapter2",
+          "file": "gameplay-chapter2.png",
+          "sha256": "0d369ca0f9269a8c23eb7d6c5641980ca294b74e1497c63eee1e7729a10ae0bb",
+          "width": 1440,
+          "height": 900,
+          "chapter": 2,
+          "tick": 242
+        },
+        {
+          "kind": "victory2",
+          "file": "gameplay-victory2.png",
+          "sha256": "e3d4cfd252f48d6862d17269a97c8df821413d5db43637709cdb01690bd5ef19",
+          "width": 1440,
+          "height": 900,
+          "chapter": 2,
+          "tick": 1562
+        },
+        {
+          "kind": "story3",
+          "file": "gameplay-story3.png",
+          "sha256": "ef18a142d3cde7190bf206daf649ff0379513454649676035f30ee62172cd7e7",
+          "width": 1440,
+          "height": 900,
+          "chapter": 3,
+          "tick": 2
+        },
+        {
+          "kind": "chapter3",
+          "file": "gameplay-chapter3.png",
+          "sha256": "40329bf5df9227528ff026b38277656ffae6ed6ad92e01c5624b71effe543519",
+          "width": 1440,
+          "height": 900,
+          "chapter": 3,
+          "tick": 242
+        },
+        {
+          "kind": "victory3",
+          "file": "gameplay-victory3.png",
+          "sha256": "d60e0ce26928cd7c13513ae56c9baa1f9215803079f9029cc77a0751b67a6a36",
+          "width": 1440,
+          "height": 900,
+          "chapter": 3,
+          "tick": 2086
+        },
+        {
+          "kind": "finale",
+          "file": "gameplay-finale.png",
+          "sha256": "28eee844170d788a031103cee399542897f951e500eb43be918a3d6df0600c06",
+          "width": 1440,
+          "height": 900,
+          "chapter": 3,
+          "tick": 2086
+        }
+      ]
+    },
+    {
+      "mode": "read",
+      "status": "passed",
+      "platform": "OSXPlayer",
+      "unityVersion": "6000.6.0f1",
+      "checks": [
+        {
+          "name": "diagnostic executes in a standalone Unity player",
+          "passed": true
+        },
+        {
+          "name": "native diagnostic isolation",
+          "passed": true
+        },
+        {
+          "name": "real Unity camera and authored presentation",
+          "passed": true
+        },
+        {
+          "name": "title menu has production campaign, settings, controls and LAN actions",
+          "passed": true
+        },
+        {
+          "name": "native screenshot was written: menu",
+          "passed": true
+        },
+        {
+          "name": "native screenshot is a complete PNG: menu",
+          "passed": true
+        },
+        {
+          "name": "native screenshot has rendered dimensions: menu",
+          "passed": true
+        },
+        {
+          "name": "independent process loaded all three chapter unlocks",
+          "passed": true
+        },
+        {
+          "name": "independent process loaded persisted settings",
+          "passed": true
+        },
+        {
+          "name": "independent process restored remapped keyboard action",
+          "passed": true
+        },
+        {
+          "name": "progression is stored only inside the diagnostic sandbox",
+          "passed": true
+        },
+        {
+          "name": "native screenshot was written: reloaded",
+          "passed": true
+        },
+        {
+          "name": "native screenshot is a complete PNG: reloaded",
+          "passed": true
+        },
+        {
+          "name": "native screenshot has rendered dimensions: reloaded",
+          "passed": true
+        }
+      ],
+      "checkCount": 14,
+      "completedChapters": 3,
+      "commandsReported": 0,
+      "runtimeErrorCount": 0,
+      "warningCount": 0,
+      "captures": [
+        {
+          "kind": "menu",
+          "file": "read-menu.png",
+          "sha256": "d0eb84d6cc46b73f16fc8baee9cd165896fe3387cf141bba385e7a84797bd44e",
+          "width": 1440,
+          "height": 900,
+          "chapter": 1,
+          "tick": 0
+        },
+        {
+          "kind": "reloaded",
+          "file": "read.png",
+          "sha256": "5d268063df2be915e72449cec8925795efd5282068853fcf53f271c1b96b7ef3",
+          "width": 1440,
+          "height": 900,
+          "chapter": 1,
+          "tick": 0
+        }
+      ]
+    },
+    {
+      "mode": "ui-regression",
+      "status": "passed",
+      "platform": "OSXPlayer",
+      "unityVersion": "6000.6.0f1",
+      "checks": [
+        {
+          "name": "diagnostic executes in a standalone Unity player",
+          "passed": true
+        },
+        {
+          "name": "native diagnostic isolation",
+          "passed": true
+        },
+        {
+          "name": "real Unity camera and authored presentation",
+          "passed": true
+        },
+        {
+          "name": "title menu has production campaign, settings, controls and LAN actions",
+          "passed": true
+        },
+        {
+          "name": "native screenshot was written: menu",
+          "passed": true
+        },
+        {
+          "name": "native screenshot is a complete PNG: menu",
+          "passed": true
+        },
+        {
+          "name": "native screenshot has rendered dimensions: menu",
+          "passed": true
+        },
+        {
+          "name": "resident UI regression runs the actual Havenfall project",
+          "passed": true
+        },
+        {
+          "name": "production UI button available: Begin campaign",
+          "passed": true
+        },
+        {
+          "name": "production UI button available: Enter chapter",
+          "passed": true
+        },
+        {
+          "name": "resident UI reproduction starts a real campaign chapter",
+          "passed": true
+        },
+        {
+          "name": "a resident is rescued through production gameplay before assignment",
+          "passed": true
+        },
+        {
+          "name": "UI reproduction movement remains authoritative",
+          "passed": true
+        },
+        {
+          "name": "UI reproduction movement remains authoritative",
+          "passed": true
+        },
+        {
+          "name": "UI reproduction movement remains authoritative",
+          "passed": true
+        },
+        {
+          "name": "UI reproduction movement remains authoritative",
+          "passed": true
+        },
+        {
+          "name": "UI reproduction movement remains authoritative",
+          "passed": true
+        },
+        {
+          "name": "UI reproduction movement remains authoritative",
+          "passed": true
+        },
+        {
+          "name": "UI reproduction movement remains authoritative",
+          "passed": true
+        },
+        {
+          "name": "UI reproduction movement remains authoritative",
+          "passed": true
+        },
+        {
+          "name": "UI reproduction movement remains authoritative",
+          "passed": true
+        },
+        {
+          "name": "UI reproduction movement remains authoritative",
+          "passed": true
+        },
+        {
+          "name": "UI reproduction movement remains authoritative",
+          "passed": true
+        },
+        {
+          "name": "UI reproduction movement remains authoritative",
+          "passed": true
+        },
+        {
+          "name": "UI reproduction movement remains authoritative",
+          "passed": true
+        },
+        {
+          "name": "UI reproduction movement remains authoritative",
+          "passed": true
+        },
+        {
+          "name": "UI reproduction movement remains authoritative",
+          "passed": true
+        },
+        {
+          "name": "UI reproduction movement remains authoritative",
+          "passed": true
+        },
+        {
+          "name": "UI reproduction movement remains authoritative",
+          "passed": true
+        },
+        {
+          "name": "UI reproduction movement remains authoritative",
+          "passed": true
+        },
+        {
+          "name": "UI reproduction movement remains authoritative",
+          "passed": true
+        },
+        {
+          "name": "UI reproduction movement remains authoritative",
+          "passed": true
+        },
+        {
+          "name": "UI reproduction movement remains authoritative",
+          "passed": true
+        },
+        {
+          "name": "UI reproduction movement remains authoritative",
+          "passed": true
+        },
+        {
+          "name": "UI reproduction movement remains authoritative",
+          "passed": true
+        },
+        {
+          "name": "UI reproduction movement remains authoritative",
+          "passed": true
+        },
+        {
+          "name": "UI reproduction movement remains authoritative",
+          "passed": true
+        },
+        {
+          "name": "UI reproduction movement remains authoritative",
+          "passed": true
+        },
+        {
+          "name": "UI reproduction movement remains authoritative",
+          "passed": true
+        },
+        {
+          "name": "UI reproduction movement remains authoritative",
+          "passed": true
+        },
+        {
+          "name": "UI reproduction movement remains authoritative",
+          "passed": true
+        },
+        {
+          "name": "UI reproduction movement remains authoritative",
+          "passed": true
+        },
+        {
+          "name": "UI reproduction movement remains authoritative",
+          "passed": true
+        },
+        {
+          "name": "UI reproduction reaches the requested location through movement",
+          "passed": true
+        },
+        {
+          "name": "assignment reproduction is inside the real community radius",
+          "passed": true
+        },
+        {
+          "name": "production UI button available: Actions",
+          "passed": true
+        },
+        {
+          "name": "opening solo Actions uses the production paused state",
+          "passed": true
+        },
+        {
+          "name": "native screenshot was written: resident-actions-before-list",
+          "passed": true
+        },
+        {
+          "name": "native screenshot is a complete PNG: resident-actions-before-list",
+          "passed": true
+        },
+        {
+          "name": "native screenshot has rendered dimensions: resident-actions-before-list",
+          "passed": true
+        },
+        {
+          "name": "Actions exposes a human-accessible Resident roles control",
+          "passed": true
+        },
+        {
+          "name": "production UI button available: Resident roles",
+          "passed": true
+        },
+        {
+          "name": "Actions opens a visible resident list",
+          "passed": true
+        },
+        {
+          "name": "production UI button available: Resident 1",
+          "passed": true
+        },
+        {
+          "name": "resident list opens a reachable role chooser",
+          "passed": true
+        },
+        {
+          "name": "production UI button available: Assign guard",
+          "passed": true
+        },
+        {
+          "name": "real guard button assigns the completed resident without closing or unpausing the chooser",
+          "passed": true
+        },
+        {
+          "name": "guard assignment does not advance the paused simulation clock",
+          "passed": true
+        },
+        {
+          "name": "guard acknowledgement is visible in current-role TMP text",
+          "passed": true
+        },
+        {
+          "name": "native screenshot was written: resident-guard",
+          "passed": true
+        },
+        {
+          "name": "native screenshot is a complete PNG: resident-guard",
+          "passed": true
+        },
+        {
+          "name": "native screenshot has rendered dimensions: resident-guard",
+          "passed": true
+        },
+        {
+          "name": "resident chooser has the real uGUI input module",
+          "passed": true
+        },
+        {
+          "name": "virtual D-pad reaches the actual scavenger choice",
+          "passed": true
+        },
+        {
+          "name": "virtual South submits the actual scavenger callback",
+          "passed": true
+        },
+        {
+          "name": "scavenger acknowledgement updates visible current-role TMP text",
+          "passed": true
+        },
+        {
+          "name": "native screenshot was written: resident-scavenger",
+          "passed": true
+        },
+        {
+          "name": "native screenshot is a complete PNG: resident-scavenger",
+          "passed": true
+        },
+        {
+          "name": "native screenshot has rendered dimensions: resident-scavenger",
+          "passed": true
+        },
+        {
+          "name": "resident menu East resolves the real Cancel binding",
+          "passed": true
+        },
+        {
+          "name": "resident menu back returns to residents",
+          "passed": true
+        },
+        {
+          "name": "resident menu East resolves the real Cancel binding",
+          "passed": true
+        },
+        {
+          "name": "resident menu back returns to actions",
+          "passed": true
+        },
+        {
+          "name": "resident menu East resolves the real Cancel binding",
+          "passed": true
+        },
+        {
+          "name": "resident menu back returns to play",
+          "passed": true
+        },
+        {
+          "name": "UI-assigned scavenger produces actual community resources",
+          "passed": true
+        },
+        {
+          "name": "UI reproduction movement remains authoritative",
+          "passed": true
+        },
+        {
+          "name": "UI reproduction movement remains authoritative",
+          "passed": true
+        },
+        {
+          "name": "UI reproduction movement remains authoritative",
+          "passed": true
+        },
+        {
+          "name": "UI reproduction movement remains authoritative",
+          "passed": true
+        },
+        {
+          "name": "UI reproduction movement remains authoritative",
+          "passed": true
+        },
+        {
+          "name": "UI reproduction movement remains authoritative",
+          "passed": true
+        },
+        {
+          "name": "UI reproduction movement remains authoritative",
+          "passed": true
+        },
+        {
+          "name": "UI reproduction movement remains authoritative",
+          "passed": true
+        },
+        {
+          "name": "UI reproduction movement remains authoritative",
+          "passed": true
+        },
+        {
+          "name": "UI reproduction reaches the requested location through movement",
+          "passed": true
+        },
+        {
+          "name": "production UI button available: Actions",
+          "passed": true
+        },
+        {
+          "name": "production UI button available: Resident roles",
+          "passed": true
+        },
+        {
+          "name": "Actions opens a visible resident list",
+          "passed": true
+        },
+        {
+          "name": "production UI button available: Resident 1",
+          "passed": true
+        },
+        {
+          "name": "resident list opens a reachable role chooser",
+          "passed": true
+        },
+        {
+          "name": "production UI button available: Assign guard",
+          "passed": true
+        },
+        {
+          "name": "out-of-range assignment preserves role, chooser and solo pause",
+          "passed": true
+        },
+        {
+          "name": "authoritative rejection reason is visible to the player",
+          "passed": true
+        },
+        {
+          "name": "native screenshot was written: resident-range-rejection",
+          "passed": true
+        },
+        {
+          "name": "native screenshot is a complete PNG: resident-range-rejection",
+          "passed": true
+        },
+        {
+          "name": "native screenshot has rendered dimensions: resident-range-rejection",
+          "passed": true
+        }
+      ],
+      "checkCount": 97,
+      "completedChapters": 0,
+      "commandsReported": 136,
+      "runtimeErrorCount": 0,
+      "warningCount": 0,
+      "captures": [
+        {
+          "kind": "menu",
+          "file": "ui-regression-menu.png",
+          "sha256": "afa109f7e245a1cef52461d4d261da18575500ac9a84b0b66144cd8472aa6737",
+          "width": 1440,
+          "height": 900,
+          "chapter": 1,
+          "tick": 0
+        },
+        {
+          "kind": "resident-actions-before-list",
+          "file": "ui-regression.png",
+          "sha256": "51070dc7ce3ff1b28d34bdeda878be9ab05cb9e1a4b302b910424c1276a239bd",
+          "width": 1440,
+          "height": 900,
+          "chapter": 1,
+          "tick": 210
+        },
+        {
+          "kind": "resident-guard",
+          "file": "ui-regression-resident-guard.png",
+          "sha256": "37cde3b230453e8ad6c2749f9fb2aad74d5c0da762822b5f85265d5ed2f435ac",
+          "width": 1440,
+          "height": 900,
+          "chapter": 1,
+          "tick": 210
+        },
+        {
+          "kind": "resident-scavenger",
+          "file": "ui-regression-resident-scavenger.png",
+          "sha256": "cd3f32a6feaf3c35b7c07a4d1b569d19c02fa48402551856173dcaf0d4e46d46",
+          "width": 1440,
+          "height": 900,
+          "chapter": 1,
+          "tick": 210
+        },
+        {
+          "kind": "resident-range-rejection",
+          "file": "ui-regression-resident-range-rejection.png",
+          "sha256": "5bd9a696ba147e12cf8b917685773b60f35277df9e9c6d2eb22e6563edb17bf1",
+          "width": 1440,
+          "height": 900,
+          "chapter": 1,
+          "tick": 430
+        }
+      ]
+    },
+    {
+      "mode": "lan-host",
+      "status": "passed",
+      "platform": "OSXPlayer",
+      "unityVersion": "6000.6.0f1",
+      "checks": [
+        {
+          "name": "diagnostic executes in a standalone Unity player",
+          "passed": true
+        },
+        {
+          "name": "native diagnostic isolation",
+          "passed": true
+        },
+        {
+          "name": "real Unity camera and authored presentation",
+          "passed": true
+        },
+        {
+          "name": "title menu has production campaign, settings, controls and LAN actions",
+          "passed": true
+        },
+        {
+          "name": "native screenshot was written: menu",
+          "passed": true
+        },
+        {
+          "name": "native screenshot is a complete PNG: menu",
+          "passed": true
+        },
+        {
+          "name": "native screenshot has rendered dimensions: menu",
+          "passed": true
+        },
+        {
+          "name": "native host starts its real LAN lobby",
+          "passed": true
+        },
+        {
+          "name": "initial visible lobby count matches the host",
+          "passed": true
+        },
+        {
+          "name": "native screenshot was written: lobby-before-join",
+          "passed": true
+        },
+        {
+          "name": "native screenshot is a complete PNG: lobby-before-join",
+          "passed": true
+        },
+        {
+          "name": "native screenshot has rendered dimensions: lobby-before-join",
+          "passed": true
+        },
+        {
+          "name": "independent native client joins authoritative host",
+          "passed": true
+        },
+        {
+          "name": "native screenshot was written: lobby-after-join",
+          "passed": true
+        },
+        {
+          "name": "native screenshot is a complete PNG: lobby-after-join",
+          "passed": true
+        },
+        {
+          "name": "native screenshot has rendered dimensions: lobby-after-join",
+          "passed": true
+        },
+        {
+          "name": "visible lobby count updates after a guest joins without reopening the menu",
+          "passed": true
+        },
+        {
+          "name": "host cannot pause a party with an admitted client",
+          "passed": true
+        },
+        {
+          "name": "host LAN menu leaves party simulation running",
+          "passed": true
+        },
+        {
+          "name": "host receives real movement stop and interaction commands",
+          "passed": true
+        },
+        {
+          "name": "authoritative guest position changes from client intent",
+          "passed": true
+        },
+        {
+          "name": "authoritative native simulation rejects replayed guest command",
+          "passed": true
+        },
+        {
+          "name": "replay cannot grant or spend resources",
+          "passed": true
+        },
+        {
+          "name": "native authority rejects an unknown resource-grant command",
+          "passed": true
+        },
+        {
+          "name": "invalid native command cannot grant or spend resources",
+          "passed": true
+        },
+        {
+          "name": "native HUD exposes genre-specific live progress: lan-host",
+          "passed": true
+        },
+        {
+          "name": "native HUD progress reflects authoritative counters: lan-host",
+          "passed": true
+        },
+        {
+          "name": "native progress stays visible alongside interaction context: lan-host",
+          "passed": true
+        },
+        {
+          "name": "native chapter timer stays visible: lan-host",
+          "passed": true
+        },
+        {
+          "name": "native HUD uses the current saved interaction binding: lan-host",
+          "passed": true
+        },
+        {
+          "name": "native HUD label is visible: Title / lan-host",
+          "passed": true
+        },
+        {
+          "name": "native HUD label fits its viewport: Title / lan-host",
+          "passed": true
+        },
+        {
+          "name": "native HUD label is visible: Objective / lan-host",
+          "passed": true
+        },
+        {
+          "name": "native HUD label fits its viewport: Objective / lan-host",
+          "passed": true
+        },
+        {
+          "name": "native HUD label is visible: Progress / lan-host",
+          "passed": true
+        },
+        {
+          "name": "native HUD label fits its viewport: Progress / lan-host",
+          "passed": true
+        },
+        {
+          "name": "native HUD label is visible: ChapterClock / lan-host",
+          "passed": true
+        },
+        {
+          "name": "native HUD label fits its viewport: ChapterClock / lan-host",
+          "passed": true
+        },
+        {
+          "name": "native HUD label is visible: Vitals / lan-host",
+          "passed": true
+        },
+        {
+          "name": "native HUD label fits its viewport: Vitals / lan-host",
+          "passed": true
+        },
+        {
+          "name": "native HUD label is visible: Resources / lan-host",
+          "passed": true
+        },
+        {
+          "name": "native HUD label fits its viewport: Resources / lan-host",
+          "passed": true
+        },
+        {
+          "name": "native HUD label is visible: Context / lan-host",
+          "passed": true
+        },
+        {
+          "name": "native HUD label fits its viewport: Context / lan-host",
+          "passed": true
+        },
+        {
+          "name": "native HUD label is visible: Situation / lan-host",
+          "passed": true
+        },
+        {
+          "name": "native HUD label fits its viewport: Situation / lan-host",
+          "passed": true
+        },
+        {
+          "name": "native HUD label is visible: Bindings / lan-host",
+          "passed": true
+        },
+        {
+          "name": "native HUD label fits its viewport: Bindings / lan-host",
+          "passed": true
+        },
+        {
+          "name": "native screenshot was written: lan-host",
+          "passed": true
+        },
+        {
+          "name": "native screenshot is a complete PNG: lan-host",
+          "passed": true
+        },
+        {
+          "name": "native screenshot has rendered dimensions: lan-host",
+          "passed": true
+        },
+        {
+          "name": "departure reproduction displays a live occupied lobby",
+          "passed": true
+        },
+        {
+          "name": "forbidden client command causes host disconnect",
+          "passed": true
+        },
+        {
+          "name": "visible lobby count updates after disconnect without reopening the menu",
+          "passed": true
+        },
+        {
+          "name": "native screenshot was written: lobby-after-departure",
+          "passed": true
+        },
+        {
+          "name": "native screenshot is a complete PNG: lobby-after-departure",
+          "passed": true
+        },
+        {
+          "name": "native screenshot has rendered dimensions: lobby-after-departure",
+          "passed": true
+        }
+      ],
+      "checkCount": 57,
+      "completedChapters": 0,
+      "commandsReported": 4,
+      "runtimeErrorCount": 0,
+      "warningCount": 0,
+      "captures": [
+        {
+          "kind": "menu",
+          "file": "lan-host-menu.png",
+          "sha256": "4c6d08a9e8326e10f6ef5bb36afd79b22cac096d8ca3720a002c2c1fdfd9253c",
+          "width": 1440,
+          "height": 900,
+          "chapter": 1,
+          "tick": 0
+        },
+        {
+          "kind": "lobby-before-join",
+          "file": "lan-host-lobby-before-join.png",
+          "sha256": "2bc7afabec5ed2c5df9c6eb3ad1ee42cfea232b4b623ef2559a6cdde9fa05114",
+          "width": 1440,
+          "height": 900,
+          "chapter": 1,
+          "tick": 0
+        },
+        {
+          "kind": "lobby-after-join",
+          "file": "lan-host-lobby-after-join.png",
+          "sha256": "6087daadd63d44cfe4189f650290fd1c6ccfa334ad0eef2cc8b3a561d0285ad3",
+          "width": 1440,
+          "height": 900,
+          "chapter": 1,
+          "tick": 0
+        },
+        {
+          "kind": "lan-host",
+          "file": "lan-host.png",
+          "sha256": "eb76de85d72d4c2bf52f55362dec725bd52203fa07018b2302b94689737bd57b",
+          "width": 1440,
+          "height": 900,
+          "chapter": 1,
+          "tick": 10
+        },
+        {
+          "kind": "lobby-after-departure",
+          "file": "lan-host-lobby-after-departure.png",
+          "sha256": "1964c7a9caaa0c938cc2899ffc34f406442f322f177a0f62af6fd54aa4bdda4f",
+          "width": 1440,
+          "height": 900,
+          "chapter": 1,
+          "tick": 60
+        }
+      ]
+    },
+    {
+      "mode": "lan-client",
+      "status": "passed",
+      "platform": "OSXPlayer",
+      "unityVersion": "6000.6.0f1",
+      "checks": [
+        {
+          "name": "diagnostic executes in a standalone Unity player",
+          "passed": true
+        },
+        {
+          "name": "native diagnostic isolation",
+          "passed": true
+        },
+        {
+          "name": "real Unity camera and authored presentation",
+          "passed": true
+        },
+        {
+          "name": "title menu has production campaign, settings, controls and LAN actions",
+          "passed": true
+        },
+        {
+          "name": "native screenshot was written: menu",
+          "passed": true
+        },
+        {
+          "name": "native screenshot is a complete PNG: menu",
+          "passed": true
+        },
+        {
+          "name": "native screenshot has rendered dimensions: menu",
+          "passed": true
+        },
+        {
+          "name": "native client receives assigned identity and host snapshots",
+          "passed": true
+        },
+        {
+          "name": "host snapshot includes both actual peers",
+          "passed": true
+        },
+        {
+          "name": "client queues production movement command",
+          "passed": true
+        },
+        {
+          "name": "client sees host-authoritative movement replication",
+          "passed": true
+        },
+        {
+          "name": "client queues production stop command",
+          "passed": true
+        },
+        {
+          "name": "client queues production interaction command",
+          "passed": true
+        },
+        {
+          "name": "snapshot acknowledges consumed interaction sequence",
+          "passed": true
+        },
+        {
+          "name": "client LAN pause panel keeps receiving a running host",
+          "passed": true
+        },
+        {
+          "name": "native HUD exposes genre-specific live progress: lan-client",
+          "passed": true
+        },
+        {
+          "name": "native HUD progress reflects authoritative counters: lan-client",
+          "passed": true
+        },
+        {
+          "name": "native progress stays visible alongside interaction context: lan-client",
+          "passed": true
+        },
+        {
+          "name": "native chapter timer stays visible: lan-client",
+          "passed": true
+        },
+        {
+          "name": "native HUD uses the current saved interaction binding: lan-client",
+          "passed": true
+        },
+        {
+          "name": "native HUD label is visible: Title / lan-client",
+          "passed": true
+        },
+        {
+          "name": "native HUD label fits its viewport: Title / lan-client",
+          "passed": true
+        },
+        {
+          "name": "native HUD label is visible: Objective / lan-client",
+          "passed": true
+        },
+        {
+          "name": "native HUD label fits its viewport: Objective / lan-client",
+          "passed": true
+        },
+        {
+          "name": "native HUD label is visible: Progress / lan-client",
+          "passed": true
+        },
+        {
+          "name": "native HUD label fits its viewport: Progress / lan-client",
+          "passed": true
+        },
+        {
+          "name": "native HUD label is visible: ChapterClock / lan-client",
+          "passed": true
+        },
+        {
+          "name": "native HUD label fits its viewport: ChapterClock / lan-client",
+          "passed": true
+        },
+        {
+          "name": "native HUD label is visible: Vitals / lan-client",
+          "passed": true
+        },
+        {
+          "name": "native HUD label fits its viewport: Vitals / lan-client",
+          "passed": true
+        },
+        {
+          "name": "native HUD label is visible: Resources / lan-client",
+          "passed": true
+        },
+        {
+          "name": "native HUD label fits its viewport: Resources / lan-client",
+          "passed": true
+        },
+        {
+          "name": "native HUD label is visible: Context / lan-client",
+          "passed": true
+        },
+        {
+          "name": "native HUD label fits its viewport: Context / lan-client",
+          "passed": true
+        },
+        {
+          "name": "native HUD label is visible: Situation / lan-client",
+          "passed": true
+        },
+        {
+          "name": "native HUD label fits its viewport: Situation / lan-client",
+          "passed": true
+        },
+        {
+          "name": "native HUD label is visible: Bindings / lan-client",
+          "passed": true
+        },
+        {
+          "name": "native HUD label fits its viewport: Bindings / lan-client",
+          "passed": true
+        },
+        {
+          "name": "native screenshot was written: lan-client",
+          "passed": true
+        },
+        {
+          "name": "native screenshot is a complete PNG: lan-client",
+          "passed": true
+        },
+        {
+          "name": "native screenshot has rendered dimensions: lan-client",
+          "passed": true
+        },
+        {
+          "name": "invalid client fixture is sent through the real transport",
+          "passed": true
+        },
+        {
+          "name": "client observes host rejection and disconnect",
+          "passed": true
+        }
+      ],
+      "checkCount": 43,
+      "completedChapters": 0,
+      "commandsReported": 4,
+      "runtimeErrorCount": 0,
+      "warningCount": 0,
+      "captures": [
+        {
+          "kind": "menu",
+          "file": "lan-client-menu.png",
+          "sha256": "2d2aaf6da0591b5cc76922315382d16ec453424eeea554d81beebaaa75d345d6",
+          "width": 1440,
+          "height": 900,
+          "chapter": 1,
+          "tick": 0
+        },
+        {
+          "kind": "lan-client",
+          "file": "lan-client.png",
+          "sha256": "db1ec27a96e42eeabb639e76b1de334cb2a74b09643ce6d3da171846ce9bbcf4",
+          "width": 1440,
+          "height": 900,
+          "chapter": 1,
+          "tick": 19
+        }
+      ]
+    }
+  ],
+  "scope": "macOS standalone; virtual Input System gamepad; separate native LAN processes use IPv4 loopback.",
+  "assemblySha256": "74ef4a4281f8e360d77ee8bc3dab3a6046d5defd109f9d1326bb65c849753136",
+  "nativeLan": {
+    "transport": "Two independent Unity standalone processes on IPv4 loopback",
+    "clientPlayerId": 1,
+    "snapshotsReceived": 33
+  },
+  "date": "2026-10-13"
+}
