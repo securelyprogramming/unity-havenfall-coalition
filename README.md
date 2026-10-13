@@ -50,3 +50,7 @@ python3 tools/playtest/restore_selection.py --verify-only
 
 Set `FRONTIER_ASSET_CACHE` to another private directory outside the checkout if needed. See [art restoration instructions](ContentSource/Art/RESTORE.md). Only the hash-pinned two footing meshes and palette are restored; package scripts and other unreviewed content are excluded.
 <!-- frontier-launcher-docs:end -->
+
+## Resident roles
+
+Rescue a resident, return to the community centre and open **Actions → Resident roles**. Choose the rescued resident, then assign **guard** or **scavenger**. The chooser displays the current role and feedback. Solo assignment retains pause; LAN menus keep the party running and send the choice to the authoritative host.
